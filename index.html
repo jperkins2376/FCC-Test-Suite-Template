@@ -22,7 +22,7 @@ For now, the test suite only works in Chrome! Please read the README below in th
 <body>
    <nav id="navbar">
     <header>
-      <h4>HTML5 Semantic doumentation</h4>
+      <h5>HTML5 Semantic doumentation</h5>
     </header>
     <ul class="nav flex-column">
           <li class="nav-item">
@@ -83,7 +83,7 @@ For now, the test suite only works in Chrome! Please read the README below in th
             Header
           </h2>
         </header>
-        <p>The &lt;Header&gt; element is generally found at the top of a document, a section, or an article and usually contains the main heading and some navigation and search tools.</p>
+        <p>The <code>&lt;Header&gt;</code> element is generally found at the top of a document, a section, or an article and usually contains the main heading and some navigation and search tools.</p>
         <p>
           <code> &lt;header&gt;<br>
             &lt;ul&gt;<br>
@@ -108,14 +108,15 @@ For now, the test suite only works in Chrome! Please read the README below in th
         <p>The HTML <code>&lt;nav&gt;</code> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</p>
         <p>
           <code>
-            &lt;nav class="crumbs"&gt;
-            &lt;/ol&gt;
-              &lt;li class="crumb"&gt;&lt;a href="bikes"&gt;Bikes&lt;/a$gt;&lt;/li&gt;<br>
-              &lt;li class="crumb"&gt;&lt;a href="bikes/bmx"&gt;BMX&lt;/a&gt;&lt;/li&gt;<br>
-              &lt;li class="crumb"&gt;Jump Bike 3000&lt;/li&gt;<br>
+            &lt;nav &gt;<br>
               &lt;/ol&gt;<br>
-              &lt;/nav&gt;<br>
-          </code></p>
+                &lt;li &gt; &lt;Bikes&gt; &lt;/li&gt;<br>
+                &lt;li &gt; &lt;BMX&gt; &lt;/li&gt;<br>
+                &lt;li &gt; &lt;Jump Bike 3000&gt; &lt;/li&gt;<br>
+              &lt;/ol&gt;<br>
+            &lt;/nav&gt;<br>
+          </code>
+        </p>
       </section>
     </div>
     <div>
@@ -125,9 +126,15 @@ For now, the test suite only works in Chrome! Please read the README below in th
             Section
           </h2>
         </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sint?</p>
-        <p></p>
-        <code></code>
+        <p>The HTML  <code></code>&lt;section &gt;</code>&lt; element represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document. Typically, but not always, sections have a heading.</p></p>
+        </p>
+        <p>As an example, a navigation menu should be wrapped in a <code></code>&lt;nav&gt;</code>&lt; element, but a list of search results and a map display and its controls don't have specific elements, and could be put inside a <code>&lt;section&gt;</code>&lt;.</p>
+        <code>
+          &lt;section&gt;<br>
+          &lt;h2&gt;Equipment&lt;/h2&gt; <br>
+          &lt;p&gt;The first thing you’ll need is a fishing rod or pole that you find comfortable and is strong enough for the kind of fish you’re expecting to land…&lt;/p&gt;<br>
+          &lt;/section&gt;<br>
+    </code>
       </section>
     </div>
     <div>
@@ -137,9 +144,16 @@ For now, the test suite only works in Chrome! Please read the README below in th
             Article
           </h2>
         </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sint?</p>
-        <p></p>
-        <code></code>
+        <p>The HTML <code>&lt;article&gt;</code> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</p>
+        <p>A given document can have multiple articles in it; for example, on a blog that shows the text of each article one after another as the reader scrolls, each post would be contained in an <code>&lt;article&gt;</code> element, possibly with one or more <code>&lt;section&gt;</code>'s within.</p>
+        <code>
+         &lt;article&gt;<br>
+            &lt;h1>Weather forecast for Seattle&lt;/h1&gt;<br>
+            &lt;article class="day-forecast"&gt;<br>
+            &lt;h2>03 March 2018&lt;/h2&gt;<br>
+            &lt;p>Rain.&lt;/p&gt;<br>
+        &lt;/article&gt;<br>
+        </code>
       </section>
     </div>
     <div>
@@ -149,9 +163,13 @@ For now, the test suite only works in Chrome! Please read the README below in th
             Aside
           </h2>
         </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sint?</p>
-        <p></p>
-        <code></code>
+        <p>The HTML <code>&lt;aside&gt;</code> element represents a portion of a document whose content is only indirectly related to the document's main content. </p>
+        <p>Asides are frequently presented as sidebars or call-out boxes.</p>
+        <code>
+          &lt;aside&gt;<br>
+          &lt;p&gt;The Rough-skinned Newt defends itself with a deadly neurotoxin.&lt;p&gt;<br>
+          &lt;/aside&gt;<br>
+      </code>
       </section>
     </div>
     <div>
@@ -161,11 +179,16 @@ For now, the test suite only works in Chrome! Please read the README below in th
             Footer
           </h2>
         </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sint?</p>
-        <p></p>
-        <code></code>
+        <p>The HTML <code>&lt;footer&gt;</code> element represents a footer for its nearest sectioning content or sectioning root element. </p>
+        <p>A footer typically contains information about the author of the section, copyright data or links to related documents.</p>
+        <code>    
+          &lt;footer&gt;<br>
+            &lt;p&gt;© 2018 Gandalf&lt;/p&gt;<br>
+            &lt;/footer&gt;<br>
+      </code>
       </section>
     </div>
+    <Footer id=footer-space> </Footer>
   </main>
 
 </body>
